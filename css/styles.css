@@ -1,0 +1,43 @@
+h1 {
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+body {
+  margin: 2em;
+  background-color: #4da6ff
+}
+
+/* Desktop */
+
+  /* buttons */
+  .social-btn-hm{
+    margin-top: 10%;
+  }
+  /* images */
+  .wit-logo{
+    width:400px;
+    height:300px;
+    margin-top: 10%;
+  }
+
+/* iPad */
+@media(max-device-width: 1024px){
+
+  .wit-logo{
+    width:304px;
+    height:228px;
+    margin-top: 20%;
+  }
+
+}
+
+/* iPhone 6*/
+@media (max-device-width: 667px) { 
+  .wit-logo{
+    width:304px;
+    height:228px;
+    margin-top: 20%;
+  }
+
+}
