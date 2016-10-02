@@ -4,12 +4,13 @@ h1 {
   font-size: 250%;
 }
 body {
-  margin: 2em;
-  background-color: #4da6ff
+  background-color: white;
 }
 
 /* Desktop */
-
+  .navbar-default{
+    background-color: #4da6ff !important;
+  }
   /* buttons */
   .social-btn-hm{
     margin-top: 3%;
@@ -19,6 +20,11 @@ body {
     width:400px;
     height:300px;
     margin-top: 10%;
+  }
+  .wit-nav{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: -30px;
   }
 
 /* iPad */
