@@ -18,7 +18,8 @@ body {
   
   /* buttons */
   .social-btn-hm{
-    margin-top: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .btn-wit{
@@ -40,9 +41,10 @@ body {
     margin-top: 10%;
   }
   .wit-nav{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
     margin-left: -30px;
+    height: 40px;
   }
 
 /* iPad */
@@ -53,7 +55,18 @@ body {
     height:200px;
     margin-top: 20%;
   }
+  .wit-nav{
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: -30px;
+    height: 40px;
+  }
 
+  /* buttons */
+  .social-btn-hm{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
 }
 
 /* iPhone 6*/
@@ -63,6 +76,16 @@ body {
     height:190px;
     margin-top: 20%;
   }
-
+    .wit-nav{
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: -30px;
+    height: 40px;
+  }
+  /* buttons */
+  .social-btn-hm{
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
 }
 
