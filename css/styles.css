@@ -6,15 +6,33 @@ h1 {
 body {
   background-color: white;
 }
+.subscribe-form{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 /* Desktop */
   .navbar-default{
     background-color: #4da6ff !important;
   }
+  
   /* buttons */
   .social-btn-hm{
     margin-top: 3%;
   }
+
+  .btn-wit{
+    color: #4da6ff;
+    background-color: white;
+    border-color: #4da6ff;
+  }
+
+  /* text */
+  .wit-text{
+    color: #4da6ff;
+    font-size: 16px;
+  }
+
   /* images */
   .wit-logo{
     width:400px;
@@ -28,21 +46,21 @@ body {
   }
 
 /* iPad */
-@media(max-device-width: 1024px){
+@media(max-width: 1024px){
 
   .wit-logo{
-    width:304px;
-    height:228px;
+    width:300px;
+    height:200px;
     margin-top: 20%;
   }
 
 }
 
 /* iPhone 6*/
-@media (max-device-width: 667px) { 
+@media (max-width: 667px) { 
   .wit-logo{
-    width:304px;
-    height:228px;
+    width:250px;
+    height:190px;
     margin-top: 20%;
   }
 
