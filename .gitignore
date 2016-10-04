@@ -1,7 +1,6 @@
 logs
 *.log
 **/*npm-debug.log.*
-*.js
 *.js.map
 e2e/**/*.js
 e2e/**/*.js.map
