@@ -1,0 +1,10 @@
+{
+  "appId": "witnottingham",
+  "apiKey": "caa9850fdca35caf69f684e8cc8941b32865ca42b62644111ebe97a8854a324e",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
