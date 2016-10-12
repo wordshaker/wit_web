@@ -6,7 +6,11 @@ h1 {
 }
 body {
   /*background-color: white;*/
-  background: url(/images/grey.png);
+  background: url(/images/diamond.png);
+}
+section {
+  /*background: url(/images/diamond.png);*/
+  font-family: 'Merriweather', serif;
 }
 /* Overriding bootstrap navbar */
 .navbar {
@@ -14,14 +18,34 @@ body {
   border: none !important;
 }
 .hero {
+  width: 100%;
+  height: 600px;
+  display: block;
+  position: relative;
+  padding-top: 30px;
+}
+.event-details-h2 {
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  padding: .5em;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.hero::after {
+  background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
+  background-image: linear-gradient(225deg, #fff482, #4da6ff);;
   content: "";
-  background-image: -webkit-linear-gradient(-495deg, #fdeb19, #1e71b8);
-  background-image: linear-gradient(225deg, #fdeb19, #1e71b8);
-  z-index: -1;
-  padding-bottom: 20px;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
 }
 #mc_embed_signup {
-  background: url(/images/grey.png) !important;
+  /*background: url(/images/diamond.png) !important;*/
 }
 .subscribe-form{
   margin-left: 20px;
@@ -56,8 +80,8 @@ body {
 
   /* images */
   .wit-logo{
-    width:400px;
-    height:300px;
+    width:200px;
+    height:150px;
     margin-top: 2%;
   }
   .wit-nav{
@@ -70,10 +94,14 @@ body {
 /* iPad */
 @media(max-width: 1024px){
 
+  .hero {
+    height: 650px;
+  }
+
   .wit-logo{
     width:300px;
     height:200px;
-    margin-top: 20%;
+    /*margin-top: 20%;*/
   }
   .wit-nav{
     margin-top: 4%;
@@ -91,12 +119,16 @@ body {
 
 /* iPhone 6*/
 @media (max-width: 667px) { 
+
+  .hero {
+    height: 700px;
+  }
   .wit-logo{
     width:250px;
     height:190px;
-    margin-top: 20%;
+    /*margin-top: 20%;*/
   }
-    .wit-nav{
+  .wit-nav{
     margin-top: 4%;
     margin-bottom: 1%;
     margin-left: -30px;
