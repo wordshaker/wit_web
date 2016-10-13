@@ -1,19 +1,60 @@
 h1 {
-  color: #2a4c9b;
+  color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 2.75em;
   font-weight: 800;
 }
 h2 {
-  color: #2a4c9b;
-}
-body {
-  /*background-color: white;*/
-  background: url(/images/gplay.png);
+  color: #286090;
 }
 section {
-  /*background: url(/images/diamond.png);*/
   font-family: 'Merriweather', serif;
+}
+.hero-image {
+  /*background: no-repeat center/100% url(/images/hero-stock.jpeg);*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  background-image: url(/images/hero-stock.jpeg);
+  background-size: 100%;
+  width: 100%;
+  height: 600px;
+
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
+}
+/*.hero-section::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: url(/images/diamond.png);
+  z-index: -1;
+}*/
+.hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hero-section {
+  width: 100%;
+  height: 600px;
+  display: block;
+  position: relative;
 }
 .content-section {
   margin: 2em 1em;
@@ -31,34 +72,27 @@ section {
   margin-bottom: 0 !important;
   border: none !important;
 }
-.hero {
-  width: 100%;
-  height: 600px;
-  display: block;
-  position: relative;
-  padding-top: 30px;
-}
 .event-details-h2 {
-  border-top: 2px solid #2a4c9b;
-  border-bottom: 2px solid #2a4c9b;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   padding: .5em;
   text-align: center;
   display: inline-block;
   margin-bottom: 20px;
-  color: #2a4c9b;
+  color: white;
 }
-.hero::after {
+/*.hero::after {
   background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
   background-image: linear-gradient(225deg, #fff482, #4da6ff);;
   content: "";
-  opacity: 0.5;
+  opacity: 0.9;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;  
-}
+  z-index: -1; 
+}*/
 .subscribe-form{
   margin-left: 20px;
   margin-right: 20px;
@@ -106,7 +140,7 @@ section {
 /* iPad */
 @media(max-width: 1024px){
 
-  .hero {
+  .hero-image {
     height: 650px;
   }
 
@@ -132,6 +166,32 @@ section {
 /* iPhone 6*/
 @media (max-width: 667px) {
 
+  .hero {
+
+  }
+
+  .hero-image {
+    /*background: no-repeat center/100% url(/images/hero-stock.jpeg);*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url(/images/hero-stock.jpeg);
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 680px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
   .content-section {
     margin-top: 10px;
   }
@@ -143,8 +203,8 @@ section {
     margin-left: 0;
     width: 100%;
   }
-  .hero {
-    height: 700px;
+  .hero-section {
+    height: 650px;
   }
   .wit-logo{
     width:250px;
