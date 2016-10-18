@@ -1,14 +1,86 @@
 h1 {
-  color: yellow;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  color: #2a4c9b;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.75em;
+  font-weight: 800;
 }
-body {
-  background-color: white;
+h2 {
+  color: #286090;
+}
+section {
+  font-family: 'Merriweather', serif;
+}
+.hero-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -2;
+
+  display: block;
+  background-image: url(/images/gplay.png);
+  width: 100%;
+  height: 600px;
+}
+
+.hero {
+  padding-top: 34px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 600px;
+  /*margin-left: 20px;*/
+  /*margin-right: 20px;*/
+}
+.hero-section {
+  width: 100%;
+  height: 600px;
+  display: block;
+  position: relative;
+}
+.content-section {
+  margin: 2em 1em;
+  margin-top: 30px;
+}
+.content-section img {
+  width: 50%;
+}
+.content-section .right {
+  margin-left: 20px;
+  width: 45%;
+}
+/* Overriding bootstrap navbar */
+.navbar {
+  margin-bottom: 0 !important;
+  border: none !important;
+}
+.event-details-h2 {
+  border-top: 2px solid #2a4c9b;
+  border-bottom: 2px solid #2a4c9b;
+  padding: .5em;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #2a4c9b;
+}
+.hero::after {
+  background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
+  background-image: linear-gradient(225deg, #fff482, #4da6ff);
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
 }
 .subscribe-form{
   margin-left: 20px;
   margin-right: 20px;
+}
+.hero-header p:nth-child(1) {
+  font-size: 2em;
 }
 
 /* Desktop */
@@ -36,9 +108,9 @@ body {
 
   /* images */
   .wit-logo{
-    width:400px;
-    height:300px;
-    margin-top: 10%;
+    width:200px;
+    height:150px;
+    margin-top: 2%;
   }
   .wit-nav{
     margin-top: 2%;
@@ -48,12 +120,20 @@ body {
   }
 
 /* iPad */
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
+
+  .hero {
+    height: 650px;
+  }
+
+  .hero-image {
+    height: 650px;
+  }
 
   .wit-logo{
     width:300px;
     height:200px;
-    margin-top: 20%;
+    /*margin-top: 20%;*/
   }
   .wit-nav{
     margin-top: 4%;
@@ -70,13 +150,32 @@ body {
 }
 
 /* iPhone 6*/
-@media (max-width: 667px) { 
+@media (max-width: 667px) {
+
+  .hero {
+    height: 670px;
+  }
+
+  .content-section {
+    margin-top: 10px;
+  }
+
+  .content-section img {
+    width: 100%;
+  }
+  .content-section .right {
+    margin-left: 0;
+    width: 100%;
+  }
+  .hero-section {
+    height: 650px;
+  }
   .wit-logo{
     width:250px;
     height:190px;
-    margin-top: 20%;
+    /*margin-top: 20%;*/
   }
-    .wit-nav{
+  .wit-nav{
     margin-top: 4%;
     margin-bottom: 1%;
     margin-left: -30px;
