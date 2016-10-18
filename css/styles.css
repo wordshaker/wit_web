@@ -1,5 +1,5 @@
 h1 {
-  color: white;
+  color: #2a4c9b;
   font-family: 'Raleway', sans-serif;
   font-size: 2.75em;
   font-weight: 800;
@@ -11,44 +11,26 @@ section {
   font-family: 'Merriweather', serif;
 }
 .hero-image {
-  /*background: no-repeat center/100% url(/images/hero-stock.jpeg);*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -2;
+
+  display: block;
+  background-image: url(/images/gplay.png);
+  width: 100%;
+  height: 600px;
+}
+
+.hero {
+  padding-top: 34px;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 1;
-
-  display: block;
-  background-image: url(/images/hero-stock.jpeg);
-  background-size: 100%;
-  width: 100%;
   height: 600px;
-
-  -webkit-filter: blur(7px);
-  -moz-filter: blur(7px);
-  -o-filter: blur(7px);
-  -ms-filter: blur(7px);
-  filter: blur(7px);
-}
-/*.hero-section::after {
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  background: url(/images/diamond.png);
-  z-index: -1;
-}*/
-.hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;*/
+  /*margin-right: 20px;*/
 }
 .hero-section {
   width: 100%;
@@ -73,26 +55,26 @@ section {
   border: none !important;
 }
 .event-details-h2 {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid #2a4c9b;
+  border-bottom: 2px solid #2a4c9b;
   padding: .5em;
   text-align: center;
   display: inline-block;
   margin-bottom: 20px;
-  color: white;
+  color: #2a4c9b;
 }
-/*.hero::after {
+.hero::after {
   background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
-  background-image: linear-gradient(225deg, #fff482, #4da6ff);;
+  background-image: linear-gradient(225deg, #fff482, #4da6ff);
   content: "";
-  opacity: 0.9;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1; 
-}*/
+}
 .subscribe-form{
   margin-left: 20px;
   margin-right: 20px;
@@ -138,7 +120,11 @@ section {
   }
 
 /* iPad */
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
+
+  .hero {
+    height: 650px;
+  }
 
   .hero-image {
     height: 650px;
@@ -167,29 +153,7 @@ section {
 @media (max-width: 667px) {
 
   .hero {
-
-  }
-
-  .hero-image {
-    /*background: no-repeat center/100% url(/images/hero-stock.jpeg);*/
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-
-    display: block;
-    background-image: url(/images/hero-stock.jpeg);
-    background-position: center;
-    background-size: 300%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 680px;
-
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    height: 670px;
   }
 
   .content-section {
