@@ -27,6 +27,36 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+    png: {
+      options: {
+        optimizationLevel: 7
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'images',
+          src: ['**/*.png'],
+          dest: 'images',
+          ext: '.png'
+        }
+      ]
+    },
+    jpg: {
+      options: {
+        progressive: true
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'images',
+          src: ['**/*.jpg'],
+          dest: 'images',
+          ext: '.jpg'
+        }
+      ]
+      }
+    },
     qunit: {
       files: ['test/**/*.html']
     },
@@ -53,9 +83,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  
   grunt.registerTask('test', ['jshint', 'qunit']);
-
+  grunt.registerTask('imagemin', ['imagemin']);
+  grunt.registerTask('imagepng', ['imagemin:png']); 
+  grunt.registerTask('imagejpg', ['imagemin:jpg']);
   grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
 
 };

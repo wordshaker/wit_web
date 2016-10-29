@@ -5,6 +5,10 @@
     "start": "npm run lite",
     "lite": "lite-server"
   },
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.8.6"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/wordshaker/wit_web.git"
