@@ -28,34 +28,34 @@ module.exports = function(grunt) {
       }
     },
     imagemin: {
-    png: {
-      options: {
-        optimizationLevel: 7
+      png: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'images/',
+            src: ['**/*.png'],
+            dest: 'images/',
+            ext: '.png'
+          }
+        ]
       },
-      files: [
-        {
-          expand: true,
-          cwd: 'images',
-          src: ['**/*.png'],
-          dest: 'images',
-          ext: '.png'
+      jpg: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'images/',
+            src: ['**/*.jpg'],
+            dest: 'images/',
+            ext: '.jpg'
+          }
+        ]
         }
-      ]
-    },
-    jpg: {
-      options: {
-        progressive: true
-      },
-      files: [
-        {
-          expand: true,
-          cwd: 'images',
-          src: ['**/*.jpg'],
-          dest: 'images',
-          ext: '.jpg'
-        }
-      ]
-      }
     },
     qunit: {
       files: ['test/**/*.html']
