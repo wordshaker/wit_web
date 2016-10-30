@@ -2,7 +2,7 @@
   "name": "wit",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run lite",
+    "start": "node npm run lite",
     "lite": "lite-server"
   },
   "engines": {
