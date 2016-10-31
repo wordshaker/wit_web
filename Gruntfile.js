@@ -23,6 +23,7 @@ module.exports = function(grunt) {
         files: {
           'site.min.js': [
             'js/*.js', 'app/*.js',
+            'app/*.*.js',
             'node_modules/**/*.js'
           ]
         }
