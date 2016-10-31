@@ -21,8 +21,10 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'js/npm.min.js': 'js/npm.js',
-          'js/jquery.min.js': 'js/jquery.js',
+          'site.min.js': [
+            'js/*.js', 'js/npm.js',
+            'js/jquery.js',
+          ]
         }
       }
     },
