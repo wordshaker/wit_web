@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/**/*.js'],
+        src: ['js/**/*.js'],
         dest: 'js/<%= pkg.name %>.js'
       }
     },
@@ -15,15 +15,14 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
+      dist: {
+          src: 'js/<%= pkg.name %>.js',
+          dest: 'js/<%= pkg.name %>.min.js'
+      },
       build: {
         files: {
           'js/npm.min.js': 'js/npm.js',
           'js/jquery.min.js': 'js/jquery.js',
-        }
-      },
-      dist: {
-        files: {
-          'js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
