@@ -29,8 +29,6 @@ section {
   right: 0;
   z-index: 1;
   height: 600px;
-  /*margin-left: 20px;*/
-  /*margin-right: 20px;*/
 }
 .hero-section {
   width: 100%;
@@ -118,6 +116,15 @@ section {
     margin-left: -30px;
     height: 40px;
   }
+  .frontdoor{
+    margin-top:60px;
+  }
+
+/* Google map */
+
+  .mapstyle{
+    margin-top:30px;
+  }
 
 /* iPad */
 @media(max-width: 1024px) {
@@ -140,6 +147,10 @@ section {
     margin-bottom: 1%;
     margin-left: -30px;
     height: 40px;
+  }
+
+  .frontdoor{
+    margin-top:30px;
   }
 
   /* buttons */
@@ -167,6 +178,7 @@ section {
     margin-left: 0;
     width: 100%;
   }
+
   .hero-section {
     height: 650px;
   }
@@ -181,6 +193,11 @@ section {
     margin-left: -30px;
     height: 40px;
   }
+  .frontdoor{
+    margin-top:30px;
+    margin-bottom: 30px
+  }
+  
   /* buttons */
   .social-btn-hm{
     margin-top: 2%;
