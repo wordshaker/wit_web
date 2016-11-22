@@ -1,15 +1,55 @@
-<section class="hero-section" style="text-align:center">
-	<div class="hero-image"></div>
-	<div class="hero">
-		<img href= "https://twitter.com/WIT_Notts" src="/images/logo_cropped_no_text.png" alt="WitLogo" class="wit-logo">
-		<h1 class="hero-header">
-			<p>WOMEN</p>
-			<p>IN TECHNOLOGY</p>
-		</h1>
-		<h2 class="event-details-h2">
-			<i>3rd November 2016 / Accelerate Nottingham</i>
-		</h2>
-		<div class="intro-message subscribe-form" ng-controller="subscribeCtrl">
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#findus">Find Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- header
+
+    <!-- Services Section-->
+	<section class="hero-section">
+		<div class="container">
+			<div class="hero hero-image">
+				<img href= "https://twitter.com/WIT_Notts" src="/images/logo_cropped_no_text.png" alt="WitLogo" class="wit-logo">
+					<h1 class="hero-header">
+						<p>WOMEN</p>
+						<p>IN TECHNOLOGY</p>
+					</h1>
+					<h2 class="event-details-h2">
+						<i>3rd November 2016 / Accelerate Nottingham</i>
+					</h2>
+			<div class="intro-message subscribe-form" ng-controller="subscribeCtrl">
 			<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 	<!-- 		<style type="text/css">
 			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
@@ -25,50 +65,128 @@
 					</div>
 				</form>
 			</div>
-		</div>
-	</div>
-</section>
-<section class="content-section">
-	<div class="container">
-		<div class="row">
-			<div class="left">
-				<img src="/images/wit8.PNG" class="pull-left" style="margin-top:30px">
 			</div>
-			<div class="right pull-right container">
-				<h2>About</h2>
-				<p>We are a monthly meetup for women from all area’s of technology and those with an emerging interest in technology.
-				   The events range from talks to activities, and we try to keep them accesible to all levels. Don't be scared! You don't 
-				   need to be a technical genius.</p>
-				<p>We also support anyone wanting to do a talk. First time? We will support you every step of the way in any way we can.</p>
-				<p>As we are celebrating the women in our industry, and not aiming to exclude, the event has a “Bring a Bloke” scheme,
-				   meaning each female attendee can bring one male friend if they want to. This keeps a female majority at all times.</p>
-				<p>Women in Tech is also on many social media sites which you can visit using the links below. Please sign up for our events on 
-					the Meetup website so we know how many pizza's to buy.
-				</p>
-				<div class="center">
-					<a href="https://twitter.com/WIT_Notts" class="btn btn-social-icon btn-twitter social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span class="fa fa-twitter"></span></a>
-					<a href="https://www.facebook.com/WITNottingham/" class="btn btn-social-icon btn-facebook social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span class="fa fa-facebook"></span></a>
-					<a href="https://www.linkedin.com/company/women-in-tech-nottingham?trk=company_logo" class="btn btn-social-icon btn-linkedin social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-linkedin']);"><span class="fa fa-linkedin"></span></a>
-					<a href="https://www.meetup.com/Women-In-Tech-Nottingham" class="btn btn-social-icon btn-pinterest social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-pinterest']);"><span class="fa fa-list-alt"></span></a>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Portfolio Grid Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+					<img src="/images/wit8.PNG" class=" col-lg-6 left pull-left" style="margin-top:30px">
+				<div class="col-lg-6 right pull-right ">
+					<h2>About</h2>
+					<p>We are a monthly meetup for women from all area’s of technology and those with an emerging interest in technology.
+					The events range from talks to activities, and we try to keep them accesible to all levels. Don't be scared! You don't 
+					need to be a technical genius.</p>
+					<p>We also support anyone wanting to do a talk. First time? We will support you every step of the way in any way we can.</p>
+					<p>As we are celebrating the women in our industry, and not aiming to exclude, the event has a “Bring a Bloke” scheme,
+					meaning each female attendee can bring one male friend if they want to. This keeps a female majority at all times.</p>
+					<p>Women in Tech is also on many social media sites which you can visit using the links below. Please sign up for our events on 
+						the Meetup website so we know how many pizza's to buy.
+					</p>
+					<div class="center">
+						<a href="https://twitter.com/WIT_Notts" class="btn btn-social-icon btn-twitter social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span class="fa fa-twitter"></span></a>
+						<a href="https://www.facebook.com/WITNottingham/" class="btn btn-social-icon btn-facebook social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span class="fa fa-facebook"></span></a>
+						<a href="https://www.linkedin.com/company/women-in-tech-nottingham?trk=company_logo" class="btn btn-social-icon btn-linkedin social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-linkedin']);"><span class="fa fa-linkedin"></span></a>
+						<a href="https://www.meetup.com/Women-In-Tech-Nottingham" class="btn btn-social-icon btn-pinterest social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-pinterest']);"><span class="fa fa-list-alt"></span></a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+	<section id="findus" class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="right pull-right container">
+						<img src="/images/door.JPG" class="pull-left frontdoor">
+				</div>
+				<div class="container">
+					<h2>How To Find Us</h2>
+					<p> We are in the Accelerate Nottingham Building, The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW</p>
+					<p> Just come in the front door. </p>
+					<div class="right container mapstyle" id="map">
+						<iframe src="http://mapbuildr.com/frame/r85tvf" frameborder="0" height="300" width="100%"></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<section class="content-section">
-	<div class="container">
-		<div class="row">
-			<div class="right pull-right container">
-					<img src="/images/door.JPG" class="pull-left frontdoor">
-			</div>
-			<div class="container">
-				<h2>How To Find Us</h2>
-				<p> We are in the Accelerate Nottingham Building, The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW</p>
-				<p> Just come in the front door. </p>
-				<div class="right container mapstyle" id="map">
-					<iframe src="http://mapbuildr.com/frame/r85tvf" frameborder="0" height="300" width="100%"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
+
+    <!-- Contact Section
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline">
+                       	<li><a href="https://twitter.com/WIT_Notts" class="btn btn-social-icon btn-twitter social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span class="fa fa-twitter"></span></a>
+						</li>
+						<li><a href="https://www.facebook.com/WITNottingham/" class="btn btn-social-icon btn-facebook social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span class="fa fa-facebook"></span></a>
+						</li>
+						<li><a href="https://www.linkedin.com/company/women-in-tech-nottingham?trk=company_logo" class="btn btn-social-icon btn-linkedin social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-linkedin']);"><span class="fa fa-linkedin"></span></a>
+						</li>
+						<li><a href="https://www.meetup.com/Women-In-Tech-Nottingham" class="btn btn-social-icon btn-pinterest social-btn-hm" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-pinterest']);"><span class="fa fa-list-alt"></span></a>
+						</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
