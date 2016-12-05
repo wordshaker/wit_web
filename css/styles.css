@@ -1,44 +1,62 @@
 h1 {
   color: #2a4c9b;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.75em;
+  font-size: 2.5em !important;
   font-weight: 800;
 }
 h2 {
   color: #286090;
+  font-size: 25px !important;
 }
 section {
   font-family: 'Merriweather', serif;
 }
+
+.bg-light-blue {
+  background-color:#EDF3FB;
+}
+
+.bg-light-yellow {
+  background-color:#FFFACD;
+}
+
 .hero-image {
   position: absolute;
   left: 0;
   right: 0;
   z-index: -2;
-
   display: block;
-  background-image: url(/images/gplay.png);
+  background-image: url(/images/hero.png);
   width: 100%;
-  height: 600px;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-
+.mailsection{
+  padding: 15px 0px 15px 0px;
+}
 .hero {
-  padding-top: 34px;
+  padding-top: 50px;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 1;
-  height: 600px;
 }
 .hero-section {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: block;
   position: relative;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  padding: 0 0 0 0 !important;
 }
 .content-section {
-  margin: 2em 1em;
-  margin-top: 30px;
+  height: 75%;
 }
 .content-section img {
   width: 50%;
@@ -61,18 +79,7 @@ section {
   margin-bottom: 20px;
   color: #2a4c9b;
 }
-.hero::after {
-  background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
-  background-image: linear-gradient(225deg, #fff482, #4da6ff);
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-}
+
 .subscribe-form{
   margin-left: 20px;
   margin-right: 20px;
@@ -106,9 +113,9 @@ section {
 
   /* images */
   .wit-logo{
-    width:200px;
-    height:150px;
-    margin-top: 2%;
+    width: 300px;
+    height: 200px;
+    margin-top: 5%;
   }
   .wit-nav{
     margin-top: 2%;
@@ -118,6 +125,11 @@ section {
   }
   .frontdoor{
     margin-top:60px;
+  }
+
+  .cake{
+    height: 400px;
+    width: 450px;
   }
 
 /* Google map */
@@ -149,6 +161,9 @@ section {
     height: 40px;
   }
 
+  .cake{
+     display: none;
+  }
   .frontdoor{
     margin-top:30px;
   }
@@ -162,13 +177,13 @@ section {
 
 /* iPhone 6*/
 @media (max-width: 667px) {
-
   .hero {
     height: 670px;
   }
 
   .content-section {
-    margin-top: 10px;
+    height: 100%;
+
   }
 
   .content-section img {
@@ -194,8 +209,9 @@ section {
     height: 40px;
   }
   .frontdoor{
-    margin-top:30px;
-    margin-bottom: 30px
+    margin: 30px 30px 30px 30px;
+    height: 50%;
+    width: 50% !important;
   }
   
   /* buttons */
