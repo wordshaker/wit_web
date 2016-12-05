@@ -10,17 +10,25 @@ h2 {
 section {
   font-family: 'Merriweather', serif;
 }
+
+.bg-light-yellow {
+  background-color:#EDF3FB;
+}
 .hero-image {
   position: absolute;
   left: 0;
   right: 0;
   z-index: -2;
   display: block;
-  background-image: url(/images/gplay.png);
+  background-image: url(/images/hero.png);
   width: 100%;
   height: 800px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-
+.mailsection{
+  padding: 15px 0px 15px 0px;
+}
 .hero {
   padding-top: 50px;
   position: absolute;
@@ -67,18 +75,7 @@ section {
   margin-bottom: 20px;
   color: #2a4c9b;
 }
-.hero::after {
-  background-image: -webkit-linear-gradient(-495deg, #fff482, #4da6ff);
-  background-image: linear-gradient(225deg, #fff482, #4da6ff);
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-}
+
 .subscribe-form{
   margin-left: 20px;
   margin-right: 20px;
@@ -112,9 +109,10 @@ section {
 
   /* images */
   .wit-logo{
-    width:200px;
-    height:150px;
-    margin-top: 2%;
+    width: 300px;
+    height: 200px;
+    margin-top: 5%;
+    margin-right: 50%;
   }
   .wit-nav{
     margin-top: 2%;
