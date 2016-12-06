@@ -11,8 +11,8 @@ h2 {
 p{
   color: #13508A;
 }
-a{
-  color: #13508A !important;
+.text-primary, a{
+  color: #13508A;
 }
 section {
   font-family: 'Merriweather', serif;
@@ -22,7 +22,7 @@ section {
   background-color:#9CC1E4;
 }
 
-.bg-light-yellow {
+.bg-drk-blue {
   background-color:#6B9CCC;
 }
 
@@ -83,7 +83,7 @@ section {
   text-align: center;
   display: inline-block;
   margin-bottom: 20px;
-  color: #2a4c9b;
+  color: #fff;
 }
 
 .subscribe-form{
@@ -147,11 +147,18 @@ section {
 /* iPad */
 @media(max-width: 1024px) {
 
+  .mailsection{
+    padding: 15px 0px 15px 0px;
+  }
   .hero {
     height: 650px;
   }
 
   .hero-image {
+    height: 650px;
+  }
+
+  .hero-section {
     height: 650px;
   }
 
@@ -200,6 +207,12 @@ section {
     width: 100%;
   }
 
+  .bg-drk-blue {
+    background-color:#6B9CCC;
+    height: 900px !important;
+    padding: 20px 0;
+  }
+
   .hero-section {
     height: 650px;
   }
@@ -216,7 +229,7 @@ section {
   }
   .frontdoor{
     margin: 30px 30px 30px 30px;
-    height: 50%;
+    height: 30%;
     width: 50% !important;
   }
   
