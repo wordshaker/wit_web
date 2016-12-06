@@ -8,9 +8,18 @@ h2 {
   color: #13508A;
   font-size: 25px !important;
 }
+h3 {
+  color: #fff;
+  font-size: 25px !important;
+  font-style: italic;
+  font-weight: 400 !important;
+  margin-top: 0px;
+}
 p{
   color: #13508A;
+  font-size: 16px;
 }
+
 .text-primary, a{
   color: #13508A;
 }
@@ -20,10 +29,12 @@ section {
 
 .bg-light-blue {
   background-color:#9CC1E4;
+  padding: 150px 0;
 }
 
 .bg-drk-blue {
   background-color:#6B9CCC;
+  padding: 150px 0;
 }
 
 .hero-image {
@@ -123,6 +134,11 @@ section {
     height: 200px;
     margin-top: 5%;
   }
+
+  .esendex-logo{
+    margin-left: -5%;
+  }
+  
   .wit-nav{
     margin-top: 2%;
     margin-bottom: 1%;
@@ -146,7 +162,14 @@ section {
 
 /* iPad */
 @media(max-width: 1024px) {
+  
+  .bg-light-blue {
+    padding: 100px 0;
+  }
 
+  .bg-drk-blue {
+    padding: 100px 0;
+  }
   .mailsection{
     padding: 15px 0px 15px 0px;
   }
@@ -163,9 +186,8 @@ section {
   }
 
   .wit-logo{
-    width:300px;
-    height:200px;
-    /*margin-top: 20%;*/
+    width: 200px;
+    height: 120px;
   }
   .wit-nav{
     margin-top: 4%;
@@ -190,6 +212,14 @@ section {
 
 /* iPhone 6*/
 @media (max-width: 667px) {
+  
+  .bg-light-blue {
+    padding: 75px 0;
+  }
+
+  .bg-drk-blue {
+    padding: 75px 0;
+  } 
   .hero {
     height: 670px;
   }
@@ -217,9 +247,8 @@ section {
     height: 650px;
   }
   .wit-logo{
-    width:250px;
-    height:190px;
-    /*margin-top: 20%;*/
+    width: 200px;
+    height: 120px;
   }
   .wit-nav{
     margin-top: 4%;
